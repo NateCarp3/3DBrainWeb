@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="Materials.css">
+    <header>
+        <title>
+            Buy Model
+        </title>
+    </header>
+    <body class="bod">
+        <div class="heading">
+        <!--Title of the website-->
+            BUY MODEL
+        </div>
+    
+        <div class="toprow">
+            <div class="mat">
+                <form name="formid">
+                <label for="matselect">SELECT YOUR MATERIAL:    </label>
+                <select id="matselect" onchange="doDat()">
+                    <option value="">--------------------</option>
+                    <option value="Resin" class="m">Resin</option>
+                    <option value="Multi-Material" class="m">Multi-Material</option>
+                    <option value="PLA" class="m">PLA</option>
+                </select>
+                </form>
+                <p id="lbl"></p>
+            </div>
+            <div class="col">
+                <form name="formid2">
+                <label for="color" class="collab">SELECT YOUR COLOR:    </label>
+                <select id="color" onchange="changeDat()">
+                    <option value="">--------------------</option>
+                    <option value="White">White (resin & PLA)</option>
+                    <option value="Pink">Pink (resin & PLA)</option>
+                    <option value="Red">Red (resin & PLA)</option>
+                    <option value="Clear">Clear (resin)</option>
+                    <option value="Tango Clear/White Vera">Tango Clear/White Vera (Multi-Material)
+                    </option>
+                </select>
+                </form>
+                <p id="lbl2"></p>
+            </div>
+            <div class="inf">
+                <form name= "formid3">
+                <label for="infill" class="fillab">SELECT YOUR INFILL:  </label>
+                <select id="infill" onchange="yaKnow()">
+                    <option value="">--------------------</option>
+                    <option value="Solid">Solid</option>
+                    <option value="Lattice">Lattice (PLA)</option>
+                    <option value="Multi-Material">Multi-Material</option>
+                </select>
+                </form>
+                <p id="lbl3"></p>
+            </div>
+        </div>
+        <div class="secondrow">
+            <div class="quant">
+                <label for="">QUANTITY</label>
+                <input type="text" class="uni" placeholder="ENTER #">
+            </div>
+            <div class="conf">
+                <button id="check" onclick="clickAlert()">ADD TO CART</button>>
+            </div>
+        </div>
+        <div class="third">
+            <div class="phases">
+                <img src="freesurfer.png" alt="fs" class="fs">
+                <img src="meshlab.png" alt="ml" class="ml">
+                <img src="brainmodel.jpeg" alt="bm" class="bm">
+            </div>
+        </div>
+    </body>
+    <script>
+        function doDat() {
+            var x = document.getElementById("matselect").value;
+            document.getElementById("lbl").innerHTML = "You selected: " + x;
+        }
+        function changeDat() {
+            var x = document.getElementById("color").value;
+            document.getElementById("lbl2").innerHTML = "You selected: " + x;
+        }
+        function yaKnow() {
+            var x = document.getElementById("infill").value;
+            document.getElementById("lbl3").innerHTML = "You selected: " + x;
+        }
+        function clickAlert() {
+            alert("SELECTIONS ADDED TO CART")
+        }
+    </script>
+</html>

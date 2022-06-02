@@ -1,0 +1,55 @@
+.bod
+{
+    padding: 110px;
+    background-color: blanchedalmond;
+    border-style: groove;
+    border-color: blue;
+    border-radius: 30px ;
+    border-width: 10px;
+    margin: 50px;
+    background-image: url('starz.png');
+}
+.page
+{
+    display: flex;
+    justify-content: space-between;
+}
+.heading
+{
+    font-size: 2cm;
+    text-align: center;
+    margin-bottom: 100px;
+    border-style: double;
+    border-width: 20px;
+    border-color: blue;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: black;
+    color: blue;
+    font-family: "Lucida Console", "Courier New", monospace;
+    padding: 25px;
+}
+.para
+{
+    background-color: black;
+    border-style: inset;
+    border-width: 5px;
+    border-color: blanchedalmond;
+    width: 300px;
+    margin:auto;
+    color: blanchedalmond;
+    width: 1000px;
+    padding: 50px;
+    font-size: .7cm;
+}
+#team
+{
+    margin: auto;
+    margin-bottom: 50px;
+    width: 1120px;
+}
+.side
+{
+    height: 590px;
+}
+
